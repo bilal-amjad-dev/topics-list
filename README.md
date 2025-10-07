@@ -1,16 +1,17 @@
-### No.1 
+## DevOps Case Studies
 
-[Efficient AWS Cost Management through Stale Resource Detection](https://github.com/mathesh-me/aws-cost-optimization)
+### 1. Efficient AWS Cost Management through Stale Resource Detection
+**Link:** [View Project](https://github.com/mathesh-me/aws-cost-optimization)  
+**Focus:** AWS cost optimization, resource management
 
-### No.2 
+### 2. Serverless EC2 Instance Scheduler for Company Working Hours
+**Link:** [View Project](https://github.com/mathesh-me/serverless-ec2-scheduler)  
+**Focus:** Automation, serverless, AWS Lambda
 
-[Serverless EC2 Instance Scheduler for Company Working Hours](https://github.com/mathesh-me/serverless-ec2-scheduler)
+### 3. DevOpsified - Complete DevOps Implementation
+**Link:** [Watch Video](https://www.youtube.com/watch?v=HGu9sgoHaJ0&t=1s)  
+**Focus:** End-to-end DevOps pipeline, CI/CD
 
-
-### No.3 
-[DevOpsified | Complete DevOps Implementation in one project](https://www.youtube.com/watch?v=HGu9sgoHaJ0&t=1s)
-
-
-### No.r 
-
-[DevOpsified 2 | Complete DevOps Implementation on MERN Stack application | End to End DevOps Project](https://www.youtube.com/watch?v=-AAcMNncCa4)
+### 4. DevOpsified 2 - MERN Stack DevOps Project
+**Link:** [Watch Video](https://www.youtube.com/watch?v=-AAcMNncCa4)  
+**Focus:** Full-stack deployment, MERN, DevOps automation
