@@ -1,4 +1,4 @@
-## 7 DevOps Case Studies
+## DevOps Case Studies
 
 ### 1. Netflix - Chaos Engineering for Unbreakable Streaming
 - **Tools:** Chaos Monkey, Spinnaker, AWS
@@ -43,3 +43,5 @@
 - **Source:** [Atlassian](https://www.atlassian.com/blog/devops/casestudy-devops-jamf-software)
 
 
+### 18 DevOps Case Studies 
+- **Source:** [DevOps School](https://www.devopsschool.com/blog/devops-case-studies-compilation/)
