@@ -45,3 +45,20 @@
 
 ### 8. 18-DevOps Case Studies 
 - **Source:** [DevOps School](https://www.devopsschool.com/blog/devops-case-studies-compilation/)
+
+
+
+
+---
+|||
+|---|---|
+|Netflix|Chaos Engineering: How Netflix Tamed Failure to Achieve Maximum Resilience|
+|Etsy|The Cultural Shift: How Etsy Achieved 50+ Deployments Per Day|
+|Capital One|DevSecOps in Finance: Capital One's Journey from Bank to Tech Leader|
+|Amazon	|Scaling with Autonomy: The Amazon "Two-Pizza Team" Microservices Model|
+|Google	|Beyond DevOps: Applying Google's Site Reliability Engineering (SRE) Principles|
+|Microsoft|Enterprise Transformation: Microsoft's Shift to Agile and High-Speed Delivery|
+|Spotify|Unpacking the Squad Model: How Spotify Scales Culture and Innovation|
+|Target|Breaking the Monolith: Target's Journey to Cloud Modernization|
+|Walmart|Zero Downtime Retail: Walmart's Automation Strategy for Peak Traffic|
+|Starbucks|DevOps at the Edge: Starbucks' Automated Deployment for In-Store Devices|
