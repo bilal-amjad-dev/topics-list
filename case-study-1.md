@@ -43,5 +43,5 @@
 - **Source:** [Atlassian](https://www.atlassian.com/blog/devops/casestudy-devops-jamf-software)
 
 
-### 18 DevOps Case Studies 
+### 8. 18-DevOps Case Studies 
 - **Source:** [DevOps School](https://www.devopsschool.com/blog/devops-case-studies-compilation/)
