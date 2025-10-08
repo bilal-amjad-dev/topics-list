@@ -1,4 +1,4 @@
-## Top 10 DevOps Case Studies
+## 7 DevOps Case Studies
 
 ### 1. Netflix - Chaos Engineering for Unbreakable Streaming
 - **Tools:** Chaos Monkey, Spinnaker, AWS
@@ -40,6 +40,6 @@
 - **Tools:** Jira, Bamboo, DevSecOps checks
 - **Outcome:** 3x faster releases, fewer errors
 - **Key Learning:** Automation + security for niche tech
-- **Source:** [Atlassian]((https://www.atlassian.com/blog/devops/casestudy-devops-jamf-software)
+- **Source:** [Atlassian](https://www.atlassian.com/blog/devops/casestudy-devops-jamf-software)
 
 
