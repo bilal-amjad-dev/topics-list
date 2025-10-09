@@ -144,7 +144,7 @@ If you like, I can pull up *very recent (2025) case studies* that include threat
 ---
 
 
-
+Gemini
 
 
 
