@@ -137,3 +137,28 @@ If you like, I can pull up *very recent (2025) case studies* that include threat
 [2]: https://hydrasit.com/case-studies/aws-security-implementation?utm_source=chatgpt.com "Hydras | Global Energy Company"
 [3]: https://www.mphasis.com/home/innovation/nextlabs/aws-services/case-study/health-service-automation.html?utm_source=chatgpt.com "Innovation | Next Labs | AWS Services | Case Study | Health Service Provider Builds High-Trust DEVSECOPS Automation Foundation"
 
+
+
+---
+---
+---
+
+
+
+
+
+## 10 AWS Security Case Study Ideas (Alerting & Automated Actions)
+
+| # | Case Study Problem (The Challenge) | Detection Tool (Alerting) | Automated Action (Solution) |
+| :--- | :--- | :--- | :--- |
+| **1.** | **Public S3 Data Exposure:** New S3 bucket galti se public access ke liye khul gaya, jismein PII (Personally Identifiable Information) data hai. | **AWS Security Hub** (ya **Macie** for PII) | **AWS Lambda** (via EventBridge) foran bucket par **Block Public Access** settings apply kar deta hai. |
+| **2.** | **Unused/Old IAM Keys:** Development team ke kisi member ki access key 90 din se zyada purani ho gayi aur istemal nahi hui. | **IAM Access Analyzer** ya **AWS Lambda** (Custom Script) | **AWS Lambda** (via CloudWatch Schedule) us purani key ko **automatically disable** kar deta hai. |
+| **3.** | **Vulnerable SSH Port:** EC2 instance ke Security Group mein SSH port 22 **`0.0.0.0/0`** (internet se open) ho gaya. | **AWS Config** (Custom Rule) ya **Security Hub** | **AWS Lambda** (via EventBridge) woh **insecure rule foran hata** kar use sirf approved IP range tak restrict kar deta hai. |
+| **4.** | **GuardDuty Compromised Host:** GuardDuty ne EC2 instance par **Cryptocurrency Mining** ya **unusual data transfer** jaisi malicious activity detect ki. | **Amazon GuardDuty** | **AWS Lambda** (via EventBridge) compromised instance ka Security Group badal kar use **network se isolate (quarantine)** kar deta hai. |
+| **5.** | **Unencrypted EBS Volumes:** Production mein ek naya EBS volume **encryption ke bagair** attach ho gaya. | **AWS Config** (Rule: `encrypted-volumes`) | **AWS Lambda** (via EventBridge) **automatic enforcement** ke liye volume ko detach kar deta hai ya uska snapshot lekar encrypted volume se replace kar deta hai. |
+| **6.** | **API Key Exposure in Lambda:** Developer ne kisi Lambda function ke environment variables mein database ka **production password** daal diya. | **Amazon Macie** (for detecting secrets) ya **Security Hub** | **AWS Lambda** (via Macie/EventBridge) us environment variable se **secret value ko hata deta hai** aur notification bhejta hai. |
+| **7.** | **IAM Root Account Use:** Kisi ne galti se **Root User** se koi non-administrative kaam kiya. | **AWS CloudTrail** (Log monitoring) $\to$ **Amazon CloudWatch** | **SNS/Slack Notification:** CloudWatch (Filter) $\to$ SNS (Simple Notification Service) ko trigger karke security team aur management ko **immediate alert** bhejta hai. |
+| **8.** | **Overly Broad Cross-Account Trust:** Ek test account ko galti se production account ke **Admin role** par trust de diya gaya. | **IAM Access Analyzer** | **AWS Lambda** (via Security Hub Custom Action) us **Trust Policy ko revert** karke sirf zaruri (least privilege) services tak limit kar deta hai. |
+| **9.** | **Manual Configuration Drift (ClickOps):** Ek critical EC2 instance manually delete ho gaya, ya uski configuration IaC se hat gayi. | **AWS Config** (ya **CloudTrail** Delete API call) | **AWS Lambda** ya **Step Functions** ko trigger karke deleted resource ko uske **last known secure state par restore** karne ki process shuru karta hai (backup ya snapshot se). |
+| **10.** | **Database Secret Rotation:** Database password **manually** rotate karna mushkil hai aur purana hone par risk badhta hai. | **AWS Secrets Manager** (Rotation setting) | **AWS Secrets Manager** schedule ke mutabiq **Lambda function ko trigger** karta hai jo DB mein naya password set karta hai aur secret store ko update karta hai. |
+
