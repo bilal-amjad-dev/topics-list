@@ -48,3 +48,92 @@
 
 ---
 
+
+
+
+Here are **3 recent, real-world case studies** about companies that used AWS alerting + automated action to solve security challenges. Useful for your research.
+
+---
+
+## 1) TUI Group — Automated Security Remediation
+
+**Problem:**
+TUI’s AWS environment had grown massively (many accounts, many regions). Security findings and misconfigurations took too long to investigate manually. ([Amazon Web Services, Inc.][1])
+
+**AWS Tools / Architecture Used:**
+
+* AWS Security Hub (to get unified view of findings) ([Amazon Web Services, Inc.][1])
+* Amazon GuardDuty (for threat detection) ([Amazon Web Services, Inc.][1])
+* “Automated Security Response on AWS” solution (playbooks, event-driven remediation) ([Amazon Web Services, Inc.][1])
+* EventBridge for triggering remediations ([Amazon Web Services, Inc.][1])
+
+**Actions Taken / Automated Response:**
+
+* They created prebuilt + custom remediation playbooks for known security issues (unauthorized config changes, non-compliant resources). ([Amazon Web Services, Inc.][1])
+* Automated responses to findings (instead of manual intervention) using Security Hub + playbooks. ([Amazon Web Services, Inc.][1])
+
+**Outcomes / Benefits:**
+
+* Saved ~156 workdays per year. ([Amazon Web Services, Inc.][1])
+* Remediation speed improved by ~85%. ([Amazon Web Services, Inc.][1])
+* Consistent security posture across all accounts / regions. ([Amazon Web Services, Inc.][1])
+
+---
+
+## 2) Hydras / Leading Energy Company — Security Transformation
+
+**Problem:**
+A large multinational energy company was migrating many on-premise systems to AWS. They needed a cloud-native security posture, but lacked standardized tooling, visibility, and security automation. ([Hydras][2])
+
+**AWS Tools / Architecture Used:**
+
+* AWS Organizations (to manage accounts / governance) ([Hydras][2])
+* AWS CloudTrail (logging) ([Hydras][2])
+* AWS Config (for capturing assets, monitoring changes) ([Hydras][2])
+* Amazon GuardDuty (threat detection) ([Hydras][2])
+* AWS Security Hub (compliance posture, alert aggregation) ([Hydras][2])
+* AWS Inspector, IAM Access Analyzer etc. for deeper scanning of vulnerabilities and permissions. ([Hydras][2])
+
+**Actions Taken / Automated Response:**
+
+* Hydras built initial proof-of-concepts to automate detection of misconfigurations and vulnerabilities. ([Hydras][2])
+* Integrated the security tools, automated monitoring, and alerted on risky states. ([Hydras][2])
+* Embedded security consultants with developer or platform teams to help integrate secure practices continuously. ([Hydras][2])
+
+**Outcomes / Benefits:**
+
+* The security tooling / monitoring was deployed in **over 3000 AWS accounts**. ([Hydras][2])
+* The company now has improved visibility, faster detection of issues, and better governance over permissions and resource state. ([Hydras][2])
+
+---
+
+## 3) Healthcare / Health Information Systems Provider — Continuous Security in CI/CD
+
+**Problem:**
+A global health-information-systems company needed to speed up its development / deployment pipeline (move from waterfall to agile), but they were blocked by manual security checks and post-deployment remediations. This slowed releases and increased risk due to non-compliant resources. ([mphasis.com][3])
+
+**AWS Tools / Architecture Used:**
+
+* AWS Config (detect non-compliant resource configurations) ([mphasis.com][3])
+* AWS CloudWatch (monitoring events / metrics) ([mphasis.com][3])
+* AWS Lambda (reactive remediation when non-compliance is detected) ([mphasis.com][3])
+* CI/CD pipelines extended with preventive controls (e.g. config checks) and detective/reactive controls. ([mphasis.com][3])
+
+**Actions Taken / Automated Response:**
+
+* Non-compliant resources are automatically tagged and/or corrected via Lambda when violations are detected. ([mphasis.com][3])
+* Built detection (CloudWatch, Config) that triggers remediation workflows. ([mphasis.com][3])
+
+**Outcomes / Benefits:**
+
+* They were able to accelerate release velocity (more frequent deployments) with higher confidence in security posture. ([mphasis.com][3])
+* Improved compliance and governance, reduced manual effort & delays. ([mphasis.com][3])
+
+---
+
+If you like, I can pull up *very recent (2025) case studies* that include threat response automations (Lambda, GuardDuty etc.), so your project is referencing cutting-edge examples.
+
+[1]: https://aws.amazon.com/solutions/case-studies/tui-case-study/?utm_source=chatgpt.com "TUI Enhances Security Control Management with Automated Security Response on AWS | Case Study | AWS"
+[2]: https://hydrasit.com/case-studies/aws-security-implementation?utm_source=chatgpt.com "Hydras | Global Energy Company"
+[3]: https://www.mphasis.com/home/innovation/nextlabs/aws-services/case-study/health-service-automation.html?utm_source=chatgpt.com "Innovation | Next Labs | AWS Services | Case Study | Health Service Provider Builds High-Trust DEVSECOPS Automation Foundation"
+
